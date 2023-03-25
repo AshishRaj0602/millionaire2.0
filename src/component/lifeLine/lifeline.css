@@ -1,0 +1,44 @@
+.lifeline{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    background: teal;
+}
+.lifeline > button{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.lifeline > .not_aviable{
+    cursor: not-allowed;
+}
+
+
+.lifeline.inactive{
+    background-color: red;
+    animation: act 3s ease forwards;
+}
+.button.disable{
+    cursor: not-allowed;
+}
+.used{
+    background-color: teal;
+}
+@keyframes act{
+    0%,22%,42%{
+        background: mediumblue;
+    }
+    20%,40%,60%{
+        background: linear-gradient(#0e0124,#22074d);;
+    }
+    62%,100%{
+        background: red;
+    }
+}

@@ -79,3 +79,23 @@
     right: 0;
     margin: auto;
 }
+
+
+@media screen and (max-width: 480px){
+    .app{
+        display: block;
+        height: auto;;
+    }
+    .top{
+        height: 40vh;
+    }
+    .timer{
+        top: -16%;
+    }
+    .main{
+        width: 100%;
+    }
+    .pyramid{
+        width: 100%;
+    }
+}
